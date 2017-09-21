@@ -2,25 +2,27 @@
 
 <p><strong>1) Da lista de tecnologias abaixo, aponte qual é executada no cliente e qual é executada no servidor </strong></p>
 <table border="1">
+	<!-- Meio certo 1,0 -->
 	<tr><th>Tecnologia</th><th>Cliente</th><th>Servidor</th></tr>
 	<tr><td>Apache</td><td>&nbsp;</td><td>x</td></tr>
 	<tr><td>JavaScript</td><td>x</td><td>&nbsp;</td></tr>
 	<tr><td>Tomcat</td><td>&nbsp;</td><td>x</td></tr>
-	<tr><td>Java</td><td>x</td><td>&nbsp;</td></tr>
-	<tr><td>HTML</td><td>x</td><td>&nbsp;</td></tr>
-	<tr><td>PHP</td><td>x</td><td>&nbsp;</td></tr>
+	<tr><td>Java</td><td>x</td><td>&nbsp;</td></tr> <!-- Não é cliente -->
+	<tr><td>HTML</td><td>x</td><td>&nbsp;</td></tr> 
+	<tr><td>PHP</td><td>x</td><td>&nbsp;</td></tr> <!-- Não é cliente -->
 	<tr><td>Apache</td><td>&nbsp;</td><td>x</td></tr>
 	<tr><td>MySQL</td><td>&nbsp;</td><td>x</td></tr>
-	<tr><td>XHTML</td><td>&nbsp;</td><td>x</td></tr>
+	<tr><td>XHTML</td><td>&nbsp;</td><td>x</td></tr> <!-- É cliente -->
 	<tr><td>MongoDB</td><td>&nbsp;</td><td>x</td></tr>
 	<tr><td>CSS</td><td>x</td><td>&nbsp;</td></tr>
 </table>
 
 <p><strong>2) Aponte as regiões da URL <code>http://www.impacta.com.br/eventos/default.php</code></strong></p>
-
+<!-- Meio certo 1,0: o domínio é composto por impacta.com.br, faltou indicar o recurso e o caminho do recurso -->
 <p>RESPOSTA:<br>http:\\ = protocolo, www.impacta = dominio, .com = comercial, e br = site comprado no brasil</p>
 
 <p><strong>3) Quais outros protocolos de comunicação para troca de mensagens via internet existem? Pesquise e cite 3 exemplos, descrevendo sua função e aplicação.</strong></p>
+<!-- Correto 2,0 -->
 <ul>
 	<li>
 		<p>
@@ -40,12 +42,15 @@
 </ul>
 
 <p><strong>4) Explore os sites de hospedagem do  (<a href="http://www.uolhost.uol.com.br/" target="_blank">http://www.uolhost.uol.com.br/</a>) e da LOCAWEB (<a href="https://www.locaweb.com.br" target="_blank">https://www.locaweb.com.br</a>), veja os serviços que eles oferecem. Qual desses serviços (em cada site) seria mais adequado para o seu site de desenvolvedor (páginas estáticas) e para a sua aplicação web?</strong></p>
-
+<!-- Errado: a ideia era pesquisar os serviços dentro dos dois portais, compra-los e determinar qual serviõ emc ada portal é mais indicado para um site estático e outro dinâmico -->
 <p>RESPOSTA:<br>A Locaweb podia ser indicada sem medo. Hoje, a história é diferente. Eles estão enfrentando muitas queixas de usuários. Na agência em que eu trabalhava até o mês passado a idéia era migrar da Locaweb para outro host.<br>
 	A plataforma Uol Host de hospedagem é muito estável, sem queda, lentidão ou qualquer outro problema significativo. O atendimento é bom e o painel de controle tem algumas limitações, se compararmos com o painel da Locaweb, mas ainda sim resolve as necessidade principais.
 
 <p><strong>5) Pequisem sobre as limitações do HTTP 1.1 e como o HTTP2 vence essa limitação, cite 2 dessas limitações e suas respostas no HTTP2</strong></p>
+<!-- Correto 2,0 -->
+<p>RESPOSTA:<br>No HTTP 1.1 habilitamos o GZIP para comprimir as informações que mandamos em nossas respostas. Uma boa prática que precisa ser habilitada explicitamente.<br> 
+	No HTTP 2 GZIP é padrão e obrigatório.
 
-<p>RESPOSTA:<br>No HTTP 1.1 habilitamos o GZIP para comprimir as informações que mandamos em nossas respostas. Uma boa prática que precisa ser habilitada explicitamente.<br> No HTTP 2 GZIP é padrão e obrigatório.
-
- <br>No HTTP 1.1 os headers são enviados em plain text, em cada requisição (o famoso User-Agent por exemplo). <br>No HTTP 2 os headers são binários e comprimidos, diminuindo o volume de dados. Além disso, é possível reaproveitar os headers para as requisições seguintes. Dessa forma, só temos que mandar os cabeçalhos que mudam. Isso reduz as requisições e as deixa menos volumosas.</p>
+ <br>No HTTP 1.1 os headers são enviados em plain text, em cada requisição (o famoso User-Agent por exemplo). <br>
+ No HTTP 2 os headers são binários e comprimidos, diminuindo o volume de dados. Além disso, é possível reaproveitar os headers para as requisições seguintes. 
+ Dessa forma, só temos que mandar os cabeçalhos que mudam. Isso reduz as requisições e as deixa menos volumosas.</p>
